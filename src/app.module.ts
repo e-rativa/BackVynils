@@ -48,7 +48,8 @@ import { AlbumMusicianModule } from './albummusician/albummusician.module';
       migrations: [__dirname + '/migration/**/*{.ts,.js}'],
       migrationsRun: true,
       extra: {
-        rejectUnauthorized: false 
+        // rejectUnauthorized: false 
+        ssl: true
       },
     }),
     RecordLabelModule,
